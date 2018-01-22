@@ -10,8 +10,8 @@ package:
 source:
   fn: modeltools_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/modeltools_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/modeltools/modeltools_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/modeltools_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/modeltools/modeltools_{{ version }}.tar.gz
   sha256: 07b331475625674ab00e6ddfc479cbdbf0b22d5d237e8c25d83ddf3e0ad1cd7a
 
 
