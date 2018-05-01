@@ -14,22 +14,15 @@ source:
     - {{ cran_mirror }}/src/contrib/Archive/modeltools/modeltools_{{ version }}.tar.gz
   sha256: 07b331475625674ab00e6ddfc479cbdbf0b22d5d237e8c25d83ddf3e0ad1cd7a
 
-
-  # patches:
-   # List any patch files here
-   # - fix.patch
-
 build:
   merge_build_host: True  # [win]
   # If this is a new build for the same version, increment the build number.
   number: 4
 
-
   # This is required to make R link correctly on Linux.
   rpaths:
     - lib/R/lib/
     - lib/
-
 
 requirements:
   build:
